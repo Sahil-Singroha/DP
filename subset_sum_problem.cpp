@@ -17,6 +17,7 @@ bool subsetsum(int a[],int n,int sum)
             }
         }
     for(int i=1;i<n+1;i++)
+    {
       for(int j=1;j<sum+1;j++)
         {
             if(a[i-1]<=j)
@@ -29,6 +30,7 @@ bool subsetsum(int a[],int n,int sum)
                 }
 
         }
+    }
             return t[n][sum];
 }
 
